@@ -9,6 +9,7 @@
 // pragma solidity 0.8.14;
 // pragma solidity >=0.4.20;
 pragma solidity >=0.4.21 <=0.8.14;
+pragma abicoder v1;
 
 
 library SafeMath {

@@ -444,9 +444,8 @@ contract GF is IBEP20, Auth, Pausable {
 
         uint256 currentAllowance = _allowances[owner][spender];
         require(currentAllowance >= subtractedValue, "ERC20: decreased allowance below zero");
-        unchecked {
-            approve(spender, currentAllowance - subtractedValue);
-        }
+        
+        approve(spender, currentAllowance - subtractedValue);
 
         return true;
     }
